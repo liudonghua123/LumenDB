@@ -1,0 +1,15 @@
+# Normalize text files to LF in the repository
+* text=auto eol=lf
+
+# Binary assets must never be normalized or diffed as text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff  binary
+*.woff2 binary
+
+# Generated lockfiles: keep them committed but out of language statistics
+pnpm-lock.yaml linguist-generated=true
+uv.lock linguist-generated=true
